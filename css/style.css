@@ -16,7 +16,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
     font-weight: 700;
 }
 
@@ -70,7 +69,7 @@ body {
 .my-slider ul li h2 {
     position: absolute;
     top: 150px;
-    left: 33%;
+    left: calc(50% - 315px);
     font-size: 4.5em;
     font-weight: bold;
     line-height: 1.1;
@@ -81,7 +80,7 @@ body {
 .my-slider ul li h3 {
     position: absolute;
     top: 250px;
-    left: 25%;
+    left: calc(50% - 473px);
     font-size: 2.75em;
     font-weight: 300;
     line-height: 1.1;
@@ -91,9 +90,10 @@ body {
 .my-slider ul li p {
     position: absolute;
     top: 380px;
-    left: 27%;
+    left: calc(50% - 437px);
     font-size: 1.375em;
     text-align: center;
+    max-width: 875px;
 }
 
 .more {
@@ -112,7 +112,6 @@ body {
 
 .more:hover {
     border: 1px solid #000000;
-
 }
 
 .unslider-nav {
@@ -121,3 +120,73 @@ body {
     position: relative;
     top: -40px;
 }
+
+.services {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.services-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services-item {
+    width: 380px;
+    height: 210px;
+    border: 1px solid #dfdfdf;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services-item img {
+    width: 120px;
+    height: 120px;
+}
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f5f5f5;
+}
+
+.about p {
+    max-width: 925px;
+    margin: 0 auto;
+    line-height: 1.4;
+    padding-bottom: 10px;
+    font-size: 1.125em;
+}
+
+.photo-area {
+    background:#fdeeec;
+}
+.photo-area-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.photo-area-wrap img{
+    max-width: 440px;
+    max-height: 325px;
+    border: 5px solid #ffffff;
+    margin-right: 20px;
+}
+
+

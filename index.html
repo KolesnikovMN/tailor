@@ -25,11 +25,11 @@
             <span class="logo_img"></span>
             <span class="logo_text">У Ирины</span>
         </a>
-        <nav>
+        <nav id="menu">
             <ul class="nav">
-                <li><a href="#">Услуги</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">Об ателье</a></li>
                 <li><a href="#">Гарантии</a></li>
-                <li><a href="#">Об ателье</a></li>
                 <li><a href="#">Отзывы</a></li>
                 <li><a href="#">Контакты</a></li>
                 <li><a href="#">Прайс-лист</a></li>
@@ -41,8 +41,7 @@
             <li>
                 <h2>АТЕЛЬЕ "У ИРИНЫ"</h2>
                 <h3>КАЧЕСТВЕННЫЙ РЕМОНТ И ПОШИВ ОДЕЖДЫ</h3>
-                <p>Ателье оснащено современным швейным оборудованием, что позволяет
-                    <br>производить качественный пошив и
+                <p>Ателье оснащено современным швейным оборудованием, что позволяет производить качественный пошив и
                     ремонт изделий из различных видов ткани</p>
                 <button class="more">Узнать подробнее</button>
                 <img class="slide" src="/img/slide-1.jpg" alt="">
@@ -50,8 +49,7 @@
             <li>
                 <h2>АТЕЛЬЕ "У ИРИНЫ"</h2>
                 <h3>КАЧЕСТВЕННЫЙ РЕМОНТ И ПОШИВ ОДЕЖДЫ</h3>
-                <p>Ателье оснащено современным швейным оборудованием, что позволяет
-                    <br>производить качественный пошив и
+                <p>Ателье оснащено современным швейным оборудованием, что позволяет производить качественный пошив и
                     ремонт изделий из различных видов ткани</p>
                 <button class="more">Узнать подробнее</button>
                 <img class="slide" src="/img/slide-1.jpg" alt="">
@@ -59,49 +57,79 @@
             <li>
                 <h2>АТЕЛЬЕ "У ИРИНЫ"</h2>
                 <h3>КАЧЕСТВЕННЫЙ РЕМОНТ И ПОШИВ ОДЕЖДЫ</h3>
-                <p>Ателье оснащено современным швейным оборудованием, что позволяет
-                    <br>производить качественный пошив и
+                <p>Ателье оснащено современным швейным оборудованием, что позволяет производить качественный пошив и
                     ремонт изделий из различных видов ткани</p>
                 <button class="more">Узнать подробнее</button>
                 <img class="slide" src="/img/slide-1.jpg" alt="">
             </li>
         </ul>
     </div>
-    <div class="services">
-        <div class="services-wrap">
-            <div class="setvices-item">
-                <img src="" alt="">
-                <p></p>
+    <section class="services" id="services">
+        <h2 class="services-header center-block-main">Услуги</h2>
+        <div class="services-wrap center-block-main">
+            <div class="services-item">
+                <img src="img/services1.png" alt="">
+                <p>Пошив/ремонт женской одежды</p>
             </div>
-            <div class="setvices-item">
-                <img src="" alt="">
-                <p></p>
+            <div class="services-item">
+                <img src="img/services2.png" alt="">
+                <p>Пошив/ремонт мужской одежды</p>
             </div>
-            <div class="setvices-item">
-                <img src="" alt="">
-                <p></p>
+            <div class="services-item">
+                <img src="img/services3.png" alt="">
+                <p>Пошив/ремонт детской одежды</p>
             </div>
-            <div class="setvices-item">
-                <img src="" alt="">
-                <p></p>
+            <div class="services-item">
+                <img src="img/services4.png" alt="">
+                <p>Текстиль для дома</p>
             </div>
-            <div class="setvices-item">
-                <img src="" alt="">
-                <p></p>
+            <div class="services-item">
+                <img src="img/services5.png" alt="">
+                <p>Пошив/ремонт свадебных платьев</p>
             </div>
-            <div class="setvices-item">
-                <img src="" alt="">
-                <p></p>
+            <div class="services-item">
+                <img src="img/services6.png" alt="">
+                <p>Пошив/ремонт платьев на выпускной</p>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="about" id="about">
+        <h2>Ателье «У ИРИНЫ» – ремонт одежды любой сложности</h2>
+        <p>Ателье по пошиву одежды или просто ателье одежды – так называют специализированные компании, мастерские,
+            которые работают в таких сферах как пошив одежды на заказ, ремонт одежды, подгонка одежды под определенный
+            размер. На указанной странице сайта подробное описание, чем занимается ателье одежды вообще, и чем конкретно
+            занимается именно это ателье. От просто пошива на заказ, до создания целых коллекций одежды.</p>
+        <p>Одежда на заказ – услуга удобная и востребованная. Мы думаем что в будущем все больше людей будут заказывать
+            одежду именно в ателье. Поставить качественную заплатку на одежде — это тоже надо уметь. В ателье одежды
+            обычно работают мастера, для которых качественная заплатка на одежде – это не проблема. Кто-то может
+            сказать, зачем носить заплатанную одежду?</p>
+        <div class="photo-area">
+            <div class="photo-area-wrap center-block-main">
+                <img src="img/about1.jpg" alt="">
+                <img src="img/about2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/unslider-min.js"></script>
     <script>
         jQuery(document).ready(function ($) {
             $('.my-slider').unslider({
-                autoplay: true,
+                autoplay: false,
                 arrows: false
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#menu").on("click", "a", function (event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({
+                    scrollTop: top
+                }, 1500);
             });
         });
     </script>
