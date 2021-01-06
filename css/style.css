@@ -89,6 +89,7 @@ body {
 .swiper-slide {
     position: relative;
     color: #ffffff;
+    max-height: 700px;
 }
 
 .swiper-slide h2 {
@@ -291,9 +292,10 @@ h2 {
 }
 
 .contacts-items li{
-    line-height: 1.8;
+    line-height: 2.5;
     font-size: 1.125em;
     list-style: none;
+    font-weight: 60;
 }
 
 .contacts-items i {
@@ -308,7 +310,10 @@ h2 {
     padding: 10px;*/
     color: #000000;
     text-decoration: none; 
+}
 
+.phone:hover {
+    color: #3546df;
 }
 
 .social-items {
