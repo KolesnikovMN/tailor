@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/unslider.css">
-    <link rel="stylesheet" href="css/unslider-dots.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -25,46 +30,60 @@
             <span class="logo_img"></span>
             <span class="logo_text">У Ирины</span>
         </a>
-        <nav id="menu">
-            <ul class="nav">
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#about">Об ателье</a></li>
-                <li><a href="#">Гарантии</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Прайс-лист</a></li>
-            </ul>
-        </nav>
+        <div class="menu-wrap">
+            <nav id="menu">
+                <ul class="nav">
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">Об ателье</a></li>
+                    <li><a href="#garantees">Гарантии</a></li>
+                    <li><a href="#revievs">Отзывы</a></li>
+                    <li><a href="#footer">Контакты</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="tel:+79286330023" class="call"><i class="fas fa-phone"></i></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="my-slider">
-        <ul>
-            <li>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
                 <h2>АТЕЛЬЕ "У ИРИНЫ"</h2>
                 <h3>КАЧЕСТВЕННЫЙ РЕМОНТ И ПОШИВ ОДЕЖДЫ</h3>
                 <p>Ателье оснащено современным швейным оборудованием, что позволяет производить качественный пошив и
                     ремонт изделий из различных видов ткани</p>
                 <button class="more">Узнать подробнее</button>
                 <img class="slide" src="/img/slide-1.jpg" alt="">
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
                 <h2>АТЕЛЬЕ "У ИРИНЫ"</h2>
                 <h3>КАЧЕСТВЕННЫЙ РЕМОНТ И ПОШИВ ОДЕЖДЫ</h3>
                 <p>Ателье оснащено современным швейным оборудованием, что позволяет производить качественный пошив и
                     ремонт изделий из различных видов ткани</p>
                 <button class="more">Узнать подробнее</button>
                 <img class="slide" src="/img/slide-1.jpg" alt="">
-            </li>
-            <li>
+            </div>
+            <div class="swiper-slide">
                 <h2>АТЕЛЬЕ "У ИРИНЫ"</h2>
                 <h3>КАЧЕСТВЕННЫЙ РЕМОНТ И ПОШИВ ОДЕЖДЫ</h3>
                 <p>Ателье оснащено современным швейным оборудованием, что позволяет производить качественный пошив и
                     ремонт изделий из различных видов ткани</p>
                 <button class="more">Узнать подробнее</button>
                 <img class="slide" src="/img/slide-1.jpg" alt="">
-            </li>
-        </ul>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
     </div>
-    <div class="clr"></div>
     <section class="services" id="services">
         <h2 class="services-header center-block-main">Услуги</h2>
         <div class="services-wrap center-block-main">
@@ -111,17 +130,105 @@
             </div>
         </div>
     </section>
+    <section class="feedback">
+        <div class="feedback-wrap">
+            <h3>Закажите пошив одежды</h3>
+            <button>Заказать звонок</button>
+            <p>Мы перезвоним в течении 15 минут</p>
+        </div>
+    </section>
+    <section class="garantees" id="garantees">
+        <div class="services-wrap center-block-main">
+            <div class="garantees-item">
+                <img src="img/garantees1.png" alt="">
+                <p>Высокое качество работы</p>
+            </div>
+            <div class="garantees-item">
+                <img src="img/garantees2.png" alt="">
+                <p>Мастер своего дела</p>
+            </div>
+            <div class="garantees-item">
+                <img src="img/garantees3.png" alt="">
+                <p>Доступная стоимость</p>
+            </div>
+            <div class="garantees-item">
+                <img src="img/garantees4.png" alt="">
+                <p>Широкий ассортимент работ</p>
+            </div>
+            <div class="garantees-item">
+                <img src="img/garantees5.png" alt="">
+                <p>Бесплатная консультация</p>
+            </div>
+            <div class="garantees-item">
+                <img src="img/garantees6.png" alt="">
+                <p>Быстро и доступно</p>
+            </div>
+        </div>
+    </section>
+    <section class="revievs" id="revievs">
+        <div class="center-block-main">
+            <p>Все очень качественно!</p>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A25ba013f34c074e71dc734c7155bd345753cfe80d110f6321f3c3e95502aaf0c&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+        </div>
+        <div class="footer-wrap center-block-main">
+            <div class="footer-logo">
+                <a href="" class="logo">
+                    <span class="logo_img"></span>
+                    <span class="logo_text">У Ирины</span>
+                </a>
+            </div>
+            <div class="contacts">
+                <ul class="contacts-items">
+                    <li class="address"><i class="fas fa-map-marker-alt"></i>Пятигорск, пр-т Калинина,
+                        118</li>
+                    <li><a href="tel:+79286330023" class="phone"><i class="fas fa-phone-alt"></i>+7 (928) 633-00-23</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <p>Присоединяйтесь в социальных сетях!</p>
+                <div class="social-items">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-viber"></i></a>
+                    <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
 
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="js/unslider-min.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            $('.my-slider').unslider({
-                autoplay: false,
-                arrows: false
-            });
-        });
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
     </script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $("#menu").on("click", "a", function (event) {
